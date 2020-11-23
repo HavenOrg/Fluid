@@ -1,5 +1,5 @@
 const User = require('./user')
-const Provider = require('./provider')
+const Provider = require('./providers')
 /**
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
