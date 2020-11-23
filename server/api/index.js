@@ -1,6 +1,7 @@
 const router = require('express').Router()
 module.exports = router
 
+// route handlers
 router.use('/users', require('./users'))
 router.use('/providers', require('./providers'))
 
