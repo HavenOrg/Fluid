@@ -29,11 +29,11 @@ const Provider = db.define('provider', {
     values: ['MD', 'RN', 'LPN', 'NP', 'PT', 'OT'],
     allowNull: false
   },
-  firstname: {
+  firstName: {
     type: Sequelize.STRING,
     allowNull: false
   },
-  lastname: {
+  lastName: {
     type: Sequelize.STRING,
     allowNull: false
   },
