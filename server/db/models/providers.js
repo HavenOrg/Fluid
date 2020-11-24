@@ -25,7 +25,32 @@ const Provider = db.define('provider', {
     }
   },
   title: {
-    type: Sequelize.STRING
+    type: Sequelize.ENUM,
+    values: ['MD', 'RN', 'LPN', 'NP', 'PT', 'OT'],
+    allowNull: false
+  },
+  firstname: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  lastname: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  specialty: {
+    type: Sequelize.ENUM,
+    values: [
+      'Family Medicine',
+      'Internal Medicine',
+      'Pediatrics',
+      'PM&R',
+      'Preventative Medicine',
+      'Psychiatry',
+      'Dermatology',
+      'Urology',
+      'Surgery'
+    ],
+    allowNull: false
   },
   googleId: {
     type: Sequelize.STRING
